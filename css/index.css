@@ -1,0 +1,46 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  padding-top: 3rem;
+  margin: 0px;
+  /* scroll-snap-align: start; */
+}
+
+.bg {
+    background: #1A3F6B;
+    /* scroll-snap-type: y mandatory; */
+    /* overflow-y: scroll; */
+
+}
+.text-intro{
+  font: 'Roboto';
+  color: white;
+  position: absolute; 
+  left: 20%;
+  font-weight: 900;
+  font-size: 4.5em;
+}
+.text-aboutme{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.text-porto{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.newline{
+  height: 2px;
+  background: white;
+}
+.icons{
+  color: white;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
