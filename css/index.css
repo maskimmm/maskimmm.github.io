@@ -4,14 +4,12 @@ body {
 section{
   padding-top: 3rem;
   margin: 0px;
-  /* scroll-snap-align: start; */
 }
-
 .bg {
-    background: #1A3F6B;
-    /* scroll-snap-type: y mandatory; */
-    /* overflow-y: scroll; */
-
+  background: #1A3F6B;
+}
+.bgw{
+  background: rgba(255,255,255, .25);
 }
 .text-intro{
   font: 'Roboto';
@@ -68,4 +66,15 @@ section{
   .scroll-control span {
     display: none;
   }
+}
+.truncate p {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.carousel-card{
+  background-color: rgba(255, 255, 255, .7);
 }
