@@ -44,23 +44,29 @@ section{
 }
 .scroll-control {
   position: fixed;
-  right: 20px;
-  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 10px;
+  height: 100%;
   transform: translateX(-50%);
   z-index: 999;
 }
 .scroll-control span {
   cursor: pointer;
-  display: block;
+  display: flex;
+  flex-direction: row-reverse;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  margin: 9px 0;
-  background-color: #000;
-  opacity: 0.5;
+  margin: 5px 0px;
+}
+.scroll{
+  background-color: rgba(255, 255, 255, .4);
+
 }
 .scroll-control span:hover {
-  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
 }
 @media all and (max-width: 1023px) {
   .scroll-control span {
@@ -76,5 +82,8 @@ section{
   text-overflow: ellipsis;
 }
 .carousel-card{
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, .3);
+}
+.card-active{
+  background-color: rgba(255, 255, 255, .8);
 }
