@@ -153,59 +153,13 @@
             <section class="bg container-fluid h-100 projects" id="projects" data-section-name="projects">
                 <div class="row d-flex align-items-center justify-content-center" style="height: 100%; padding: 5% 3%;">
                     <div class="bgw m-0 p-0" style="height: 100%; border-radius: 10px;">
-                        <div id="listProjects" class="d-flex align-items-center justify-content-start carousel slide" style="height: 100%;" data-bs-ride="carousel">
-                            <div class="carousel-inner" style="height: 100%; width: 50%;">
-                                <div class="carousel-item active" style="height: 100%;">
-                                    <div class="d-flex flex-row align-items-center justify-content-center p-0" style="height: 100%;">
-                                        <img src="../assets/img/cariboss.png" style="height: 80%;">
-                                    </div>
-                                </div>
-                                <div class="carousel-item" style="height: 100%;">
-                                    <div class="d-flex flex-row align-items-center justify-content-center p-0" style="height: 100%;">
-                                        <img src="../assets/img/mytekkom.png" style="height: 80%;">
-                                    </div>
-                                </div>
-                                <div class="carousel-item" style="height: 100%;">
-                                    <div class="d-flex flex-row align-items-center justify-content-center p-0" style="height: 100%;">
-                                        <img src="../assets/img/jobignite.png" style="height: 80%;">
-                                    </div>
-                                </div>
+                        <div id="listProjects" class="d-flex align-items-center justify-content-start carousel slide" style="height: 100%;" data-bs-ride="false">
+                            <div id="display-project" class="carousel-inner" style="height: 100%; width: 50%;">
+                                <!-- Display Project -->
                             </div>
                             <div style="height: 90%; width: 1px; border-left: 2px solid white; opacity: 50%;"></div>
-                            <div class="d-flex flex-column g-0 justify-content-start list-card" style="height: 100%; width: 50%; flex-direction: row; overflow-y: auto; padding: 2% 3%;">
-                                <div class="d-flex flex-row p-3 mt-2 carousel-card card-active" style="width: 100%; height: 15vh; border-radius: 25px;" data-bs-target="#listProjects" data-bs-slide-to="0">
-                                    <div class="d-flex align-items-center justify-content-center" style="width: 15%; height: 100%; border-radius: 18px; background-color: white;">
-                                        <img src="/assets/img/cariboss.png" alt="" style="height: 80%;">
-                                    </div>
-                                    <div class="col ms-3" style="height: 100%;">
-                                        <div class="d-flex align-items-center" style="height: 40%; font-size: 1.2em; font-weight: 700;">CariBoss</div>
-                                        <div class="truncate" style="height: 60%; line-height: 1.2;">
-                                        <p style="height: 2.4em; -webkit-line-clamp: 2;">This project was my very first project as a freelancer in UI/UX Design. I got an offer from my friend that works there. I help to create their first UI/UX design, their color palettes, and also their first logo. CariBoss is an application that aims to connect Boss and job seekers. It has many features, some of them were CV Analyzer, Job discovery feature, Articles for tips and tricks, and many more.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row p-3 mt-2 carousel-card" style="width: 100%; height: 15vh; border-radius: 25px;" data-bs-target="#listProjects" data-bs-slide-to="1">
-                                    <div class="d-flex align-items-center justify-content-center" style="width: 15%; height: 100%; border-radius: 18px; background-color: white;">
-                                        <img src="/assets/img/mytekkom.png" alt="" style="height: 80%;">
-                                    </div>
-                                    <div class="col ms-3" style="height: 100%;">
-                                        <div class="d-flex align-items-center" style="height: 40%; font-size: 1.2em; font-weight: 700;">MyTekkom</div>
-                                        <div class="truncate" style="height: 60%; line-height: 1.2;">
-                                        <p style="height: 2.4em; -webkit-line-clamp: 2;">MyTekkom was the very first application I create and its main purpose is to create a better flow of information around the computer engineering department. As a new department, the computer engineering department has so much room for improvement especially in the information sector since this department also does not have Himpunan Mahasiswa.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row p-3 mt-2 carousel-card" style="width: 100%; height: 15vh; border-radius: 25px;" data-bs-target="#listProjects" data-bs-slide-to="2">
-                                    <div class="d-flex align-items-center justify-content-center" style="width: 15%; height: 100%; border-radius: 18px; background-color: white;">
-                                        <img src="/assets/img/jobignite.png" alt="" style="height: 80%;">
-                                    </div>
-                                    <div class="col ms-3" style="height: 100%;">
-                                        <div class="d-flex align-items-center" style="height: 40%; font-size: 1.2em; font-weight: 700;">JobIgnite</div>
-                                        <div class="truncate" style="height: 60%; line-height: 1.2;">
-                                        <p style="height: 2.4em; -webkit-line-clamp: 2;">JobIgnite is an application created by Hakim from February to June 2022 that is designed to help people to seek a job. The reason why I made this application is to help recruiters and job seekers in one platform to find another.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div id="list-project" class="d-flex flex-column g-0 justify-content-start list-card" style="height: 90%; width: 50%; flex-direction: row; overflow: hidden; overflow-y: auto; padding: 0.8% 3%;">
+                                <!-- List Project -->
                             </div>
                         </div>
                     </div>
@@ -293,26 +247,74 @@
         </script>
 
         <script>
-            var header = document.getElementById("listProjects");
-            var btns = header.getElementsByClassName("carousel-card");
-            for (var i = 0; i < btns.length; i++) {
-                btns[i].addEventListener("click", function() {
-                    var current = document.getElementsByClassName("card-active");
-                    current[0].className = current[0].className.replace(" card-active", "");
-                    this.className += " card-active";
-                });
-            };
-        </script>
-
-        <script>
             $.getJSON('../data.json', function(json){
                 for(var i = 0; i < 3; i++){
                     $('#featuredTitle'+i).html(json.project[i+2].title);
                     $('#featuredConcept'+i).html(json.project[i+2].concept);
-                    $('#featuredImage'+i).attr('src', json.project[i+2].image);
+                    $('#featuredImage'+i).attr('src', json.project[i+2].imageAlt);
                     $('#linkFeaturedProject'+i).attr('href', json.project[i+2].page);
+                };
+                for(var project = Object.keys(json.project).length -1; project > -1; project--){
+                    console.log(project);
+                    if(project == Object.keys(json.project).length -1){
+                        $('#display-project').append(`
+                        <div class="carousel-item active" style="height: 100%;">
+                            <div class="d-flex flex-row align-items-center justify-content-center p-0" style="height: 100%;">
+                                <img src=${json.project[project].image} style="height: 85%;">
+                            </div>
+                        </div>
+                        `);
+                        $('#list-project').append(`
+                        <div class="d-flex flex-row p-3 mt-2 carousel-card card-active" style="width: 100%; height: 15vh; border-radius: 25px;" data-bs-target="#listProjects" data-bs-slide-to=${Object.keys(json.project).length - 1 - project}>
+                            <div class="d-flex align-items-center justify-content-center" style="width: 15%; height: 100%; border-radius: 18px; background-color: white; overflow: hidden; position: relative;">
+                                <img src=${json.project[project].icon} alt="" style="height: 100%; width: 100%; position: absolute; top: 0; right: 0;">
+                                <img class="image" src=${json.project[project].cover} alt="" style="height: 100%; width: 100%; position: absolute; top: 0; right: 0;">
+                            </div>
+                            <div class="col ms-3" style="height: 100%;">
+                                <div class="d-flex align-items-center" style="height: 40%; font-size: 1.2em; font-weight: 700;">${json.project[project].title}</div>
+                                <div class="truncate" style="height: 60%; line-height: 1.2;">
+                                <p style="height: 2.4em; -webkit-line-clamp: 2;">${json.project[project].concept}</p>
+                                </div>
+                            </div>
+                        </div>
+                        `);
+                    } 
+                    else{
+                        $('#display-project').append(`
+                        <div class="carousel-item" style="height: 100%;">
+                            <div class="d-flex flex-row align-items-center justify-content-center p-0" style="height: 100%;">
+                                <img src=${json.project[project].image} style="height: 85%;">
+                            </div>
+                        </div>
+                        `);
+                        $('#list-project').append(`
+                        <div class="d-flex flex-row p-3 mt-2 carousel-card" style="width: 100%; height: 15vh; border-radius: 25px;" data-bs-target="#listProjects" data-bs-slide-to=${Object.keys(json.project).length - 1 - project}>
+                            <div class="d-flex align-items-center justify-content-center" style="width: 15%; height: 100%; border-radius: 18px; background-color: white; overflow: hidden; position: relative;">
+                                <img src=${json.project[project].icon} alt="" style="height: 100%; width: 100%; position: absolute; top: 0; right: 0;">
+                                <img class="image" src=${json.project[project].cover} alt="" style="height: 100%; width: 100%; position: absolute; top: 0; right: 0;">
+                            </div>
+                            <div class="col ms-3" style="height: 100%;">
+                                <div class="d-flex align-items-center" style="height: 40%; font-size: 1.2em; font-weight: 700;">${json.project[project].title}</div>
+                                <div class="truncate" style="height: 60%; line-height: 1.2;">
+                                <p style="height: 2.4em; -webkit-line-clamp: 2;">${json.project[project].concept}</p>
+                                </div>
+                            </div>
+                        </div>
+                        `);
+                    }
                 }
-            })
+            
+                var header = document.getElementById("listProjects");
+                var btns = header.getElementsByClassName("carousel-card");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function() {
+                        var current = document.getElementsByClassName("card-active");
+                        current[0].className = current[0].className.replace(" card-active", "");
+                        this.className += " card-active";
+                    });
+                };
+            })  
         </script>
+        
     </body>
 </html>

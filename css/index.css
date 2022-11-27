@@ -87,3 +87,6 @@ section{
 .card-active{
   background-color: rgba(255, 255, 255, .8);
 }
+.card-active img.image{
+  display: none;
+}

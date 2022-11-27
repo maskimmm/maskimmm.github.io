@@ -222,7 +222,7 @@
         var recentProject = json.project[Object.keys(json.project).length - 1];
         $('#judul').html(recentProject.title);
         $('#konten').html(recentProject.concept);
-        $('#gambar').attr('src', recentProject.image);
+        $('#gambar').attr('src', recentProject.imageAlt);
         $('#linkProject').attr('href', recentProject.page);
       })
     </script>
