@@ -90,3 +90,26 @@ section{
 .card-active img.image{
   display: none;
 }
+.timeline {
+  border-left: 2px solid rgba(255, 255, 255, 1);
+  position: relative;
+  list-style: none;
+  color: white;
+}
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 25%;
+  background-color: rgba(83, 111, 144, 1);
+  left: -38px;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}

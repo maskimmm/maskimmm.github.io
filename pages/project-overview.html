@@ -37,17 +37,17 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="text-decoration:none; color:#D45630; font-weight: 900;">
+                    <a class="nav-link" href="../pages/project-overview.html" style="text-decoration:none; color:#D45630; font-weight: 900;">
                         PROJECT
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutme" style="text-decoration:none; color: white;">
+                    <a class="nav-link" href="../pages/aboutme.html" style="text-decoration:none; color: white;">
                         ABOUT ME
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact" style="text-decoration:none; color: white;">
+                    <a class="nav-link" href="../pages/contact.html" style="text-decoration:none; color: white;">
                         CONTACT ME
                     </a>
                 </li>
@@ -255,7 +255,7 @@
                     $('#linkFeaturedProject'+i).attr('href', json.project[i+2].page);
                 };
                 for(var project = Object.keys(json.project).length -1; project > -1; project--){
-                    console.log(project);
+                    // console.log(project);
                     if(project == Object.keys(json.project).length -1){
                         $('#display-project').append(`
                         <div class="carousel-item active" style="height: 100%;">
