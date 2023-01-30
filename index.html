@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,13 +19,13 @@
 
     <title>Rifqi Alhakim</title>
   </head>
-  <body class="h-100">
+  <body>
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow-lg" style="background-color: #1A3F6B;">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark shadow-lg" style="background-color: #1A3F6B;">
         <a class="navbar-brand mx-2" href="#home" style="text-decoration:none; color:#D45630; font-family: 'Roboto Condensed', sans-serif; font-weight: 700;">HAKIM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav" style="font-family: 'Roboto Condensed', sans-serif; font-weight: 500;">
             <ul class="navbar-nav ms-auto">
@@ -59,18 +59,18 @@
 
       <!-- Introduction Section -->
       <section class="bg container-fluid h-100 home" id="home" data-section-name="home">
-        <div class="column d-flex h-100 align-items-center justify-content-center" style="height: 100%;">
-          <div class="d-flex flex-row h-100 col-lg-6 position-relative">
+        <div class="column d-flex align-items-center justify-content-center" style="height: 100%;">
+          <div class="d-flex d-none d-xl-block flex-row h-100 col-xl-6 position-relative">
             <img src="assets/img/hakim12.png" alt="Rifqi Alhakim" class="img-fluid d-lg-flex" style="position: absolute; bottom: 9%; left: -1.65%;">
           </div>
-          <div class="d-flex h-100 flex-row col-lg-6 position-relative">
-            <div class="text-intro" style="top: 43%; color: #D45630; opacity: 50%;">
+          <div class="h-100 flex-row col position-relative">
+            <div class="text-intro" style="position: absolute; top: 43%; color: #D45630; opacity: 50%;">
               Hello!
             </div>
-            <div class="text-intro flex-row" style="top: 51%; font-size: 2.5em;">
+            <div class="text-intro" style="position: absolute; top: 51%; font-size: 2.2em;">
               I'm Rifqi Alhakim
             </div>
-            <div class="text-intro" style="top: 58%; font-size: 1.5em; font-weight: 500; ">
+            <div class="text-intro" style="position: absolute; top: 58%; font-size: 1.2em; font-weight: 500; ">
               Here's My Portfolio As A Developer
             </div>
           </div>
@@ -79,30 +79,30 @@
 
       <!-- About Me Section -->
       <section class="bg container-fluid h-100 aboutme" id="aboutme" data-section-name="aboutme">
-        <div class="column d-flex h-100 align-items-center justify-content-center" style="height: 100%;">   
-          <div class="d-flex row h-100 justify-content-center flex-column col-lg-6 m-0">
-            <div class="d-flex flex-row">
-              <div class="col-lg-2 d-inline-flex text-aboutme mb-4">
+        <div class="row d-flex align-items-center justify-content-center" style="height: 100%;">   
+          <div class="d-flex col h-100 justify-content-center flex-column col-md-6 m-0">
+            <div class="d-flex">
+              <div class="col-sm-2 d-inline-flex text-aboutme mb-4">
                 About Me
               </div>
-              <div class="col-lg-6 newline" style="position: relative; top: 30%;"></div>
+              <div class="col-6 newline" style="position: relative; top: 30%;"></div>
             </div>
-            <div class="text-aboutme flex-row" style="font-weight: 400; line-height: 1.2; text-indent: 1em; text-align: justify;">
-              <p>
+            <div class="text-aboutme d-flex pb-2 truncate" style="font-family: 'Roboto', sans-serif; font-weight: 400; line-height: 1.2; text-indent: 1em; text-align: justify; ">
+              <p class="px-2" style="-webkit-line-clamp: 12;">
                 My name is Rifqi Alhakim H, I am Computer Engineering Fresh Graduate from Sepuluh Nopember Institute of Technology. I have interests in software development. I have more than a year of experience in android development. I Currently lived in Surabaya, Indonesia and I very passionate and dedicated to my works. Besides my experience in android development, I also active in several campus activities, such as volunteering and organization. I have a passion for project management and technology development, especially working with mobile development. I am looking forward to developing and using my skill in the professional industry, especially in mobile development. 
               </p>
             </div>
-            <div class="d-flex flex-row align justify-content-center">
-              <div class="col-lg-2 d-inline-flex text-aboutme mb-4 me-4">
+            <div class="d-flex align justify-content-center">
+              <div class="col-md-2 d-inline-flex text-aboutme mb-4 me-4">
                 <a href="https://bit.ly/ResumeHakim" target="_blank" style="color: white;">
                   My Resume
                 </a>
               </div>
-              <div class="col-lg-2 newline" style="position: relative; top: 30%;"></div>
+              <div class="col-2 newline" style="position: relative; top: 30%;"></div>
             </div>
           </div>
-          <div class="d-flex h-100 flex-row col-lg-6 position-relative">
-            <img src="assets/img/hakim21.png" alt="Rifqi Alhakim" class="img-fluid d-lg-flex" style="position: absolute; bottom: 15%; right: -1.65%;">
+          <div class="d-flex d-none d-xl-block h-100 flex-row col-xl-6 position-relative">
+            <img src="assets/img/hakim21.png" alt="Rifqi Alhakim" class="img-fluid d-flex" style="position: absolute; bottom: 15%; right: -1.65%;">
           </div>
         </div>
       </section>
@@ -116,21 +116,23 @@
             </h1>
           </div>
           <div class="d-flex align-items-center justify-content-center p-0" style="height: 85%;">
-            <div class="d-flex flex-row h-100 col-lg-6 position-relative justify-content-center align-items-center">
-              <img id='gambar' alt="Recent Project" class="d-lg-flex" style="height: 80%;">
+
+            <div class="d-flex d-none d-md-block flex-row row h-100 col-md-6 position-relative justify-content-center align-items-center pt-4" style="height: 80%;">
+              <img id='gambar' alt="Recent Project" style="height: 85%; object-fit: contain;">
             </div>
-            <div class="d-flex row h-100 flex-column col-lg-6 justify-content-center align-items-start m-0 ps-4">
+            
+            <div class="d-flex row h-100 flex-column col-md-6 justify-content-center align-items-start m-0 ps-4">
               <div class="text-porto mb-3" id="judul">
               </div>
-              <div class="text-porto col-lg-10" style="font-weight: 400; line-height: 1.2; text-align: justify; font-size: 1.2em;">
+              <div class="text-porto col-md-10" style="font-weight: 400; line-height: 1.2; text-align: justify; font-size: 1.2em;">
                 <p id="konten"></p>
               </div>
               <div class="d-flex flex-row justify-content-start">
-                <div class="col-lg-6"></div>
-                <div class="col-lg-2 d-inline-flex text-porto mb-4" style="font-size: 1.2em; font-weight: 700;">
+                <div class="col-md-6"></div>
+                <div class="col-md-2 d-inline-flex text-porto mb-4" style="font-size: 1.2em; font-weight: 700;">
                   <a id="linkProject" style="text-decoration: none; color: white;">See More</a>
                 </div>
-                <div class="col-lg-2 newline" style="position: relative; top: 25%;"></div>
+                <div class="col-2 newline" style="position: relative; top: 25%;"></div>
               </div>
             </div>
           </div>
@@ -139,35 +141,35 @@
 
       <!-- Contact -->
       <section class="bg container-fluid h-100 contact" id="contact" data-section-name="contact">
-        <div class="row d-flex h-100 align-items-center justify-content-start" style="height: 100%;">
-          <div class="d-flex h-75 flex-column justify-content-center" style="color: white; font-weight: 900; font-size: 5rem; padding-left: 10%;">
+        <div class="row d-flex align-items-center justify-content-start" style="height: 100%;">
+        <div class="d-flex flex-column justify-content-center" style="height: 75%; color: white; font-weight: 900; font-size: 6vmax; padding-left: 10%;">
             <div>
-              Let's
+            Let's
             </div>
             <div>
-              Collaborate!
+            Collaborate!
             </div>
-          </div>
-          <div  class="d-flex h-25 flex-column justify-content-center align-items-center p-0" style="color: white;">
-            <div class="newline col-lg-11" style="opacity: 60%;"></div>
+        </div>
+        <div  class="d-flex flex-column justify-content-center align-items-center p-0" style="height: 25%; color: white;">
+            <div class="newline col-11" style="opacity: 60%;"></div>
             <div class="column d-flex flex-row align-items-center justify-content-center py-2">
-              <a href="mailto:alhakim.hariyantoputera@gmail.com" target="_blank" class="icons">
+            <a href="mailto:alhakim.hariyantoputera@gmail.com" target="_blank" class="icons">
                 <i class="bi-envelope icons" role="img" aria-label="Email"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/hakimrifqi/" target="_blank" class="icons">
+            </a>
+            <a href="https://www.linkedin.com/in/hakimrifqi/" target="_blank" class="icons">
                 <i class="bi-linkedin icons" role="img" aria-label="Linkedin"></i>
-              </a>
-              <a href="https://github.com/maskimmm" target="_blank" class="icons">
+            </a>
+            <a href="https://github.com/maskimmm" target="_blank" class="icons">
                 <i class="bi-github icons" role="img" aria-label="GitHub"></i>
-              </a>
-              <a href="https://www.instagram.com/alhakimrifqi__/" target="_blank" class="icons">
+            </a>
+            <a href="https://www.instagram.com/alhakimrifqi__/" target="_blank" class="icons">
                 <i class="bi-instagram icons" role="img" aria-label="Instagram"></i>
-              </a>
+            </a>
             </div>
             <div class="column d-flex flex-row align-items-center justify-content-center" style="font-size: 0.8em;">&#169; 2022 Rifqi Alhakim. All Rights Reserved</div>
-          </div>
         </div>
-      </section>
+        </div>
+    </section>
       
     </div>
 

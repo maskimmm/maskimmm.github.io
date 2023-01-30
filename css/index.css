@@ -1,5 +1,8 @@
-body {
+body, html {
+  height: 100vh;
+  width: 100vw;
   font-family: 'Roboto', sans-serif;
+  background-color: #1A3F6B;
 }
 section{
   padding-top: 3rem;
@@ -17,7 +20,7 @@ section{
   position: absolute; 
   left: 20%;
   font-weight: 900;
-  font-size: 4.5em;
+  font-size: 4.2em;
 }
 .text-aboutme{
   font-family: 'Roboto Condensed', sans-serif;
@@ -75,6 +78,13 @@ section{
 }
 .truncate p {
   font-family: 'Roboto Condensed', sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate-h5 h5 {
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;  

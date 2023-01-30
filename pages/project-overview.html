@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -19,14 +19,14 @@
 
         <title>Rifqi Alhakim</title>
     </head>
-    <body class="h-100">
+    <body>
     
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow-lg" style="background-color: #1A3F6B;">
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark shadow-lg" style="background-color: #1A3F6B;">
             <a class="navbar-brand mx-2" href="/index.html" style="text-decoration:none; color: white; font-family: 'Roboto Condensed', sans-serif;">
                 HAKIM
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav" style="font-family: 'Roboto Condensed', sans-serif; font-weight: 500;">
@@ -81,67 +81,8 @@
                                     <button type="button" data-bs-target="#featuredProjects" data-bs-slide-to="1"></button>
                                     <button type="button" data-bs-target="#featuredProjects" data-bs-slide-to="2"></button>
                                   </div>
-                                <div class="carousel-inner" style="height: 100%;">
-                                    <div class="carousel-item active" data-bs-interval="1500" style="height: 100%;">
-                                        <div class="d-flex align-items-center justify-content-center p-0" style="height: 100%;">
-                                            <div class="d-flex flex-row col-lg-6 position-relative justify-content-center align-items-center" style="height: 80%;">
-                                              <img id="featuredImage0" alt="Featured Project 1" style="height: 100%;">
-                                            </div>
-                                            <div class="d-flex row h-100 flex-column col-lg-6 justify-content-center align-items-start m-0 ps-4">
-                                              <div class="text-porto mb-3" id="featuredTitle0"></div>
-                                              <div class="text-porto col-lg-10 truncate" style="font-weight: 400; line-height: 1.2; text-align: justify; font-size: 1.2em;">
-                                                <p id="featuredConcept0" style="height: 6em;"></p>
-                                              </div>
-                                              <div class="d-flex flex-row justify-content-start">
-                                                <div class="col-lg-6"></div>
-                                                <div class="col-lg-2 d-inline-flex text-porto mb-4" style="font-size: 1.2em; font-weight: 700;">
-                                                  See More
-                                                </div>
-                                                <div class="col-lg-2 newline" style="position: relative; top: 25%;"></div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="1500" style="height: 100%;">
-                                        <div class="d-flex align-items-center justify-content-center p-0" style="height: 100%;">
-                                            <div class="d-flex flex-row col-lg-6 position-relative justify-content-center align-items-center" style="height: 80%;">
-                                              <img id="featuredImage1" alt="Featured Project 2" style="height: 100%;">
-                                            </div>
-                                            <div class="d-flex row h-100 flex-column col-lg-6 justify-content-center align-items-start m-0 ps-4">
-                                              <div id="featuredTitle1" class="text-porto mb-3"></div>
-                                              <div class="text-porto col-lg-10 truncate" style="font-weight: 400; line-height: 1.2; text-align: justify; font-size: 1.2em;">
-                                                <p id="featuredConcept1" style="height: 6em;"></p>
-                                              </div>
-                                              <div class="d-flex flex-row justify-content-start">
-                                                <div class="col-lg-6"></div>
-                                                <div class="col-lg-2 d-inline-flex text-porto mb-4" style="font-size: 1.2em; font-weight: 700;">
-                                                  See More
-                                                </div>
-                                                <div class="col-lg-2 newline" style="position: relative; top: 25%;"></div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="1500" style="height: 100%;">
-                                        <div class="d-flex align-items-center justify-content-center p-0" style="height: 100%;">
-                                            <div class="d-flex flex-row col-lg-6 position-relative justify-content-center align-items-center" style="height: 80%;">
-                                              <img id="featuredImage2" alt="Featured Project 3" style="height: 100%;">
-                                            </div>
-                                            <div class="d-flex row h-100 flex-column col-lg-6 justify-content-center align-items-start m-0 ps-4">
-                                              <div id="featuredTitle2" class="text-porto mb-3"></div>
-                                              <div class="text-porto col-lg-10 truncate" style="font-weight: 400; line-height: 1.2; text-align: justify; font-size: 1.2em;">
-                                                <p id="featuredConcept2" style="height: 6em;"></p>
-                                              </div>
-                                              <div class="d-flex flex-row justify-content-start">
-                                                <div class="col-lg-6"></div>
-                                                <div class="col-lg-2 d-inline-flex text-porto mb-4" style="font-size: 1.2em; font-weight: 700;">
-                                                  See More
-                                                </div>
-                                                <div class="col-lg-2 newline" style="position: relative; top: 25%;"></div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div id="display-featured" class="carousel-inner" style="height: 100%;">
+                                    <!-- Display Featured -->
                                 </div>
                               </div>
                         </div>
@@ -154,11 +95,11 @@
                 <div class="row d-flex align-items-center justify-content-center" style="height: 100%; padding: 5% 3%;">
                     <div class="bgw m-0 p-0" style="height: 100%; border-radius: 10px;">
                         <div id="listProjects" class="d-flex align-items-center justify-content-start carousel slide" style="height: 100%;" data-bs-ride="false">
-                            <div id="display-project" class="carousel-inner" style="height: 100%; width: 50%;">
+                            <div id="display-project" class="carousel-inner d-none d-md-block" style="height: 100%;">
                                 <!-- Display Project -->
                             </div>
-                            <div style="height: 90%; width: 1px; border-left: 2px solid white; opacity: 50%;"></div>
-                            <div id="list-project" class="d-flex flex-column g-0 justify-content-start list-card" style="height: 90%; width: 50%; flex-direction: row; overflow: hidden; overflow-y: auto; padding: 0.8% 3%;">
+                            <div class="d-none d-md-block" style="height: 90%; width: 1px; border-left: 2px solid white; opacity: 50%;"></div>
+                            <div id="list-project" class="d-flex flex-column g-0 justify-content-start list-card col-md-6" style="height: 90%;flex-direction: row; overflow: hidden; overflow-y: auto; padding: 0.8% 3%;">
                                 <!-- List Project -->
                             </div>
                         </div>
@@ -168,8 +109,8 @@
 
             <!-- Contact -->
             <section class="bg container-fluid h-100 contact" id="contact" data-section-name="contact">
-                <div class="row d-flex h-100 align-items-center justify-content-start" style="height: 100%;">
-                <div class="d-flex h-75 flex-column justify-content-center" style="color: white; font-weight: 900; font-size: 5rem; padding-left: 10%;">
+                <div class="row d-flex align-items-center justify-content-start" style="height: 100%;">
+                <div class="d-flex flex-column justify-content-center" style="height: 75%; color: white; font-weight: 900; font-size: 6vmax; padding-left: 10%;">
                     <div>
                     Let's
                     </div>
@@ -177,8 +118,8 @@
                     Collaborate!
                     </div>
                 </div>
-                <div  class="d-flex h-25 flex-column justify-content-center align-items-center p-0" style="color: white;">
-                    <div class="newline col-lg-11" style="opacity: 60%;"></div>
+                <div  class="d-flex flex-column justify-content-center align-items-center p-0" style="height: 25%; color: white;">
+                    <div class="newline col-11" style="opacity: 60%;"></div>
                     <div class="column d-flex flex-row align-items-center justify-content-center py-2">
                     <a href="mailto:alhakim.hariyantoputera@gmail.com" target="_blank" class="icons">
                         <i class="bi-envelope icons" role="img" aria-label="Email"></i>
@@ -248,12 +189,60 @@
 
         <script>
             $.getJSON('../data.json', function(json){
-                for(var i = 0; i < 3; i++){
-                    $('#featuredTitle'+i).html(json.project[i+2].title);
-                    $('#featuredConcept'+i).html(json.project[i+2].concept);
-                    $('#featuredImage'+i).attr('src', json.project[i+2].imageAlt);
-                    $('#linkFeaturedProject'+i).attr('href', json.project[i+2].page);
-                };
+                var featured = [2, 3, 4];
+                for(var countFeatured = 0; countFeatured < Object.keys(featured).length; countFeatured++){
+                    if(countFeatured == 0){
+                        $('#display-featured').append(`
+                        <div class="carousel-item active" data-bs-interval="1500" style="height: 100%;">
+                            <div class="d-flex align-items-center justify-content-center p-0" style="height: 100%;">
+                                <div class="d-flex flex-row col-lg-6 position-relative justify-content-center align-items-center" style="height: 80%;">
+                                    <img src=${json.project[featured[countFeatured]].imageAlt} alt="Featured Project ${countFeatured+1}" style="height: 100%;">
+                                </div>
+                                <div class="d-none d-md-block" style="height: 100%; width: 100%;">
+                                    <div class="d-flex row h-100 flex-column justify-content-center align-items-start m-0 ps-4">
+                                        <div class="text-porto mb-3">${json.project[featured[countFeatured]].title}</div>
+                                        <div class="text-porto col-lg-10 truncate" style="font-weight: 400; line-height: 1.2; text-align: justify; font-size: 1.2em;">
+                                        <p style="height: 6em;">${json.project[featured[countFeatured]].concept}</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-start">
+                                        <div class="col-lg-6"></div>
+                                        <div class="col-lg-2 d-inline-flex text-porto mb-4" style="font-size: 1.2em; font-weight: 700;">
+                                            See More
+                                        </div>
+                                        <div class="col-lg-2 newline" style="position: relative; top: 25%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        `);
+                    }else{
+                        $('#display-featured').append(`
+                        <div class="carousel-item" data-bs-interval="1500" style="height: 100%;">
+                            <div class="d-flex align-items-center justify-content-center p-0" style="height: 100%;">
+                                <div class="d-flex flex-row col-lg-6 position-relative justify-content-center align-items-center" style="height: 80%;">
+                                    <img src=${json.project[featured[countFeatured]].imageAlt} alt="Featured Project ${countFeatured+1}" style="height: 100%;">
+                                </div>
+                                <div class="d-none d-md-block" style="height: 100%; width: 100%;">
+                                    <div class="d-flex row h-100 flex-column justify-content-center align-items-start m-0 ps-4">
+                                        <div class="text-porto mb-3">${json.project[featured[countFeatured]].title}</div>
+                                        <div class="text-porto col-lg-10 truncate" style="font-weight: 400; line-height: 1.2; text-align: justify; font-size: 1.2em;">
+                                        <p style="height: 6em;">${json.project[featured[countFeatured]].concept}</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-start">
+                                        <div class="col-lg-6"></div>
+                                        <div class="col-lg-2 d-inline-flex text-porto mb-4" style="font-size: 1.2em; font-weight: 700;">
+                                            See More
+                                        </div>
+                                        <div class="col-lg-2 newline" style="position: relative; top: 25%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        `);
+                    }
+                }
                 for(var project = Object.keys(json.project).length -1; project > -1; project--){
                     // console.log(project);
                     if(project == Object.keys(json.project).length -1){
