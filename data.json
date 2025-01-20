@@ -83,6 +83,62 @@
             "imageAlt": "../assets/img/project/jobignite/jobignite-alt.png", 
             "page": "#",
             "publication": ""
+        },
+        {
+            "title": "Katakan", 
+            "concept": "Katakan is an app designed to help children to stimulate their speaking ability by asking them to say out loud the vocabulary they learn in the App.",
+            "reasoning": "Children with speech delays most likely have problems in the frontal lobe (speech & language manipulation). They need stimulation to communicate what is on their mind. To tackle this problem, we create Katakan. Katakan is an iOS application that engage children to speak as they learn new vocabularies based on daily activities in the form of a game. Katakan helps to stimulate children's speaking ability by asking them to say out loud the vocabulary they learn from the app.",
+            "feature": "This prototype of application is capable to recognize Indonesian speech using Speech Recognition framework and also capable to do text to speech task. Katakan is used to engage children to learn and speak Indonesian nouns and verbs based on common daily activities, listen to the audio provided for articulation guidance, and using gamification method so the children are keep engaged to the game.",
+            "roles":["iOS Developer"],
+            "jobdesk": "Taking role as developer, my responsibilities are to manage project workflow repository and create backend flow process. To achieve this, I manage the repository and monitor the workflow while also manage Commits/Pull Requests in the repository. I also contributed in creating the backend process, managing the project structure for assets and database. As the results, other developer members could use this database and assets easily, and can implement it in the application.",
+            "icon": "../assets/img/project/katakan/katakan-icon.png", 
+            "cover": "../assets/img/project/katakan/katakan-hover.png", 
+            "image": "../assets/img/project/katakan/katakan.png", 
+            "imageAlt": "../assets/img/project/katakan/katakan-alt.png", 
+            "page": "#",
+            "publication": ""
+        },
+        {
+            "title": "Color Sync", 
+            "concept": "Color Sync is a game created on iOS platform that allows you to compete with others to show how accurate you can match a color.",
+            "reasoning": "During tech exploration session at Apple Developer Academy, every team can freely decide on what technology they want to explore. One of the technology that my team choose were Multipeer Connectivity Framework. Color Sync is a game created on iOS platform that allows you to compete with others to show how accurate you can match a color. This application already cover how to send and receive avarious type of data streamed and how to connect to other peers using local connectivity.",
+            "feature": "This prototype of application is capable to be played by a person individually, or by a group of person up to 8 peers including the advertiser at the same time. This is possible because of Multipeer Connectivity framework provided by Apple Technology.",
+            "roles":["UI Design", "iOS Developer"],
+            "jobdesk": "Taking role as developer, my responsibilities were to develop an application using the technology provided. To achieve this, I first do research on use cases that suitable to be tackled by this technology. After that, I create the application flow and create UI/UX design. After all the requirements completed, I then start develop the application on iOS using Swift. As the results, the application were completed and can be seen below and can be explored more on the publication link section.",
+            "icon": "../assets/img/project/colorsync/colorsync-icon.png", 
+            "cover": "../assets/img/project/colorsync/colorsync-hover.png", 
+            "image": "../assets/img/project/colorsync/colorsync.png", 
+            "imageAlt": "../assets/img/project/colorsync/colorsync-alt.png", 
+            "page": "#",
+            "publication": ""
+        },
+        {
+            "title": "Beesix: Step In, Stay Informed", 
+            "concept": "Beesix is an application that enable users to experience proximity marketing whenever user walk by the store and give realtime information around them.",
+            "reasoning": "Proximity marketing is one approach that can be used as a marketing method. One way to do so is to collaborate with a simcard provider. However, this requires consideration because apart from being expensive, the range is too broad so the market is not specific. To tackle this problem, Beesix was created. Beesix is an application that enable users to experience proximity marketing whenever user walk by the store and give realtime information around them.",
+            "feature": "This application are capable to enable user experience proximity marketing whenever user walk by the store and give realtime information around them. It can also detect whether the users are in beacon area or not. User also could save and share the information across another platform",
+            "roles":["iOS Developer", "Mobile Dev"],
+            "jobdesk": "Taking role as developer, my responsibilities are to manage project repository and develop proximity experience. To achieve this, I manage the repository and monitor the workflow while also manage PRs in the repository. I also contributed in developing the proximity experience using iBeacon technology, Core Location, and HTTP Request. As the results, Beesix are now available on App Store and users can experience proximity marketing as long as the store have our IoT device.",
+            "icon": "../assets/img/project/beesix/beesix-icon.png", 
+            "cover": "../assets/img/project/beesix/beesix-hover.png", 
+            "image": "../assets/img/project/beesix/beesix.png", 
+            "imageAlt": "../assets/img/project/beesix/beesix-alt.png", 
+            "page": "#",
+            "publication": ""
+        },
+        {
+            "title": "Beesix Bussiness", 
+            "concept": "Beesix for Business is a supporting app for IoT Device and Beesix application to help business owner manage products and enables proximity marketing experiences for their customers.",
+            "reasoning": "Proximity marketing is one approach that can be used as a marketing method. One way to do so is to collaborate with a simcard provider. However, this requires consideration because apart from being expensive, the range is too broad so the market is not specific. To tackle this problem, Beesix was created. Beesix is an application that enable users to experience proximity marketing whenever user walk by the store and give realtime information around them.",
+            "feature": "This application are capable to connect with the IoT device ‘The Bee’ using BLE technology. the application can also setup the device and manage/organize message broadcasted in the device via the application. While for the device, it act as a beacon so whenever user who has Beesix app walk by the device, it can give the beacon identifier for realtime information about the store.",
+            "roles":["iOS Developer", "IoT Engineer"],
+            "jobdesk": "Taking role as iOS developer and IoT engineer, my responsibilities are to manage project repository and connect device via application. To achieve this, I manage the repository and monitor the workflow while also manage PRs in the repository. I also contributed in developing the connection between IoT device and application using BLE technology. As the results, Beesix Business are now available on Testflight and users can try the application as long as the user have the IoT device.",
+            "icon": "../assets/img/project/beesixbusiness/beesixbusiness-icon.png", 
+            "cover": "../assets/img/project/beesixbusiness/beesixbusiness-hover.png", 
+            "image": "../assets/img/project/beesixbusiness/beesixbusiness.png", 
+            "imageAlt": "../assets/img/project/beesixbusiness/beesixbusiness-alt.png", 
+            "page": "#",
+            "publication": ""
         }
     ]
 }
